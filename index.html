@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajatheking Scheduling Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rajatheking Scheduling Algorithm Simulation</h1>
+        <form id="inputForm">
+            <label for="processId">Process ID:</label>
+            <input type="text" id="processId" placeholder="Enter Process ID" required>
+            
+            <label for="burstTime">Burst Time:</label>
+            <input type="number" id="burstTime" placeholder="Enter Burst Time" required>
+            
+            <button type="submit">Add Process</button>
+        </form>
+
+        <h2>Processes</h2>
+        <table id="processTable">
+            <thead>
+                <tr>
+                    <th>Process ID</th>
+                    <th>Burst Time</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Scheduling Result (FCFS)</h2>
+        <button onclick="simulateScheduling()">Simulate Scheduling</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
